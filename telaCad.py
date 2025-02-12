@@ -56,7 +56,7 @@ labelTitulo.setGeometry(200, 10, 200, 40)
 
 # ------------ PlaceHolder para o nome Popular da planta ------------ #
 placeNome = QLineEdit(janelaCad)
-placeNome.setObjectName("placeNome")    
+placeNome.setObjectName("placeNome") 
 placeNome.setPlaceholderText("Insira o Nome comum")
 placeNome.setGeometry(150, 60, 200, 50)
 
