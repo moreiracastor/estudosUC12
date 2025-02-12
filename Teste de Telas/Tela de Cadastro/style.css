@@ -1,0 +1,156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    /* background-image: url("https://www.sitiodamata.com.br/media/catalog/product/cache/80281f1a4d89199560fc0837e49d13da/a/z/azulzinha-evolvulus-glomeratus-1_2nd.webp");
+
+    background-repeat: no-repeat;
+    background-size: 100%; */
+
+    background-color: #01061a;
+
+    color: #ced2e0;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80vh;
+    width: 25vw;
+
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 18px 2px #2857ff5b;
+    
+    background-color: #020d33;
+
+}
+
+h1 {
+    background: #253261;
+
+    width: 300px;
+    height: 40px;
+
+    border-radius: 3px;
+    margin: 10px;
+
+    text-align: center;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#inputTexto {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+
+    gap: 10px;
+
+    /* backdrop-filter: blur(10px); */
+}
+
+
+.texto {
+    width: 250px;
+    height: 30px;
+
+    background-color: #253261;
+    
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 2px;
+
+    padding: 3px 5px;
+    border:1px solid #18328d;
+    
+    font-size: 12pt;
+    color: #a7abbb;
+
+    transition: 0.2s;
+}
+
+.texto:hover {
+    border: 1px solid #2857ff;
+    box-shadow: 0px 0px 18px 2px #2857ff;
+    color: #a2b6ff;
+}
+
+::placeholder {
+    color: #a7abbb;
+}
+
+
+button {
+    width: 150px;
+    height: 40px;
+
+    background-color: #253261;
+    
+    border-radius: 3px;
+    border:1px solid #18328d;
+
+    font-size: 11pt;
+    letter-spacing: 2px;
+    color: #a7abbb;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 18px 2px #2857ff;
+    border: 1px solid #2857ff;
+}
+
+
+#inputImagem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+#btnImagem{
+    width: 175px;
+    margin: 5px;
+}
+
+#imagem {
+    height: 175px;
+    width: 175px;
+
+    border: 1px solid black;
+    object-fit: cover; /* Deixar a imagem redimencionada da forma certa */
+}
+
+#inputBtn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px;
+}
+
+
+
