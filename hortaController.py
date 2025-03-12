@@ -1,4 +1,4 @@
-from hortaModel import cadPlantas, regisSensores, carregarTabelas
+from hortaModel import *
 
 
 def salvarPlantas(nomePop, nomeCien, imagemPath):
@@ -17,3 +17,12 @@ def salvarDados(temperatura, humidade, luminosidade):
 
 def carregarColunas():
     return carregarTabelas()
+
+def verPlantas():
+    return cadPlantas()
+
+def verSensores():
+    return cadSensores()
+
+def verTab():
+    return verTabelas()

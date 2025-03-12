@@ -1,4 +1,5 @@
 import mysql.connector
+import telaCad, telaTabelas, telaSensores
 
 
 # ------------ Conexão com o banco de dados ------------ #
@@ -40,7 +41,7 @@ def regisSensores(temperatura, humidade, luminosidade):
     return cursor.lastrowid
 
 
-
+# ------------ Função de ver Tabelas ------------ #
 def carregarTabelas():
     sqlPlantas = "SELECT * FROM plantas_tb"
     sqlSensores = "SELECT * FROM sensores_tb"
@@ -53,6 +54,15 @@ def carregarTabelas():
 
     return (c1, c2)
 
+# ------------ Funções de abertura de janela ------------ #
+def cadPlantas():
+    telaCad.janelaCad.show()
+
+def cadSensores():
+    telaSensores.janelaSens.show()
+
+def verTabelas():
+     telaTabelas.janelaTab.show()
 
 # ------------ Função para encerrar a coneção com o Banco ------------ #
 def fecharConexao():
