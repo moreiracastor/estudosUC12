@@ -28,7 +28,7 @@ def cadPlantas(nomePop, nomeCien, imagemPath):
     return cursor.lastrowid
 
 
-# ------------ Função de cadastro dos dados ------------ #
+# ------------ Função de cadastro dos Sensores ------------ #
 def regisSensores(temperatura, humidade, luminosidade):
     sql = "INSERT INTO sensores_tb (temperatura, humidade, luminosidade) VALUES (%s, %s, %s)"
 
@@ -40,7 +40,21 @@ def regisSensores(temperatura, humidade, luminosidade):
     return cursor.lastrowid
 
 
-# ------------ Função para encerrar a coneção com o Bancos ------------ #
+
+def carregarTabelas():
+    sqlPlantas = "SELECT * FROM plantas_tb"
+    sqlSensores = "SELECT * FROM sensores_tb"
+
+    cursor.execute(sqlPlantas)
+    c1 = cursor.fetchall()
+
+    cursor.execute(sqlSensores)
+    c2 = cursor.fetchall()
+
+    return (c1, c2)
+
+
+# ------------ Função para encerrar a coneção com o Banco ------------ #
 def fecharConexao():
     cursor.close()
     conexao.close()

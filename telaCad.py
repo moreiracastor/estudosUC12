@@ -89,6 +89,8 @@ btnCan.setGeometry(150, 485, 200, 50)
 # ------------ Link do botão com a função ------------ #
 btnImagem.clicked.connect(abrir_arquivo)
 
+x = janelaCad.show()
+
 janelaCad.show() # Função que irá exibir a tela
 
 # ------------ Atribui uma página .qss este arquivo ------------ #
@@ -97,3 +99,5 @@ with open("estilo.qss", "r") as arq:
     app.setStyleSheet(estilo)
 
 sys.exit(app.exec_()) # Função que para fechar o aplicativo
+
+# Usar classes e try/except para os erros (debugar o código)
